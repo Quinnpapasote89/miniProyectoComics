@@ -1,0 +1,13 @@
+.titulo{
+    margin-top: 1em;
+    font-weight: bold;
+    
+}
+
+
+.tabla-usuarios{
+    background-color: rgba(20, 18, 143, 0.767);
+    border-radius: 10px;
+    margin-top: 2em;
+    border: none;
+}

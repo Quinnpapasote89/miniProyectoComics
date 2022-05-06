@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-lg navbar-custom bg-light">
+    <a class="navbar-brand"><img src="../../assets/batman.png" alt="avengers" style="width: 2em;"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span><img src="../../assets/icon/lista.png" alt=""></span>
+    </button>
+  
+    <div class="collapse navbar-collapse menu-vert" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" [routerLink]="['/home']">Inicio <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" [routerLink]="['/heroes']">Heroes</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link " [routerLink]="['/about']">Acerda de</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link " [routerLink]="['/video']">Videoteca</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link " [routerLink]="['/usuarios']">Usuarios</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link " [routerLink]="['/juegos']">Juegos</a>
+        </li>
+      </ul>
+      <div class="form-inline my-2 my-lg-0 busqueda">
+        <input class="form-control mr-sm-2" type="text" placeholder="Buscar Heroe ..." #buscarTexto (keyup.enter)="buscarUnHeroe(buscarTexto.value)">
+        <button type="button" (click)="buscarUnHeroe(buscarTexto.value)" class="btn btn-outline-danger my-2 my-sm-0" >Buscar</button>
+      </div>
+    </div>
+  </nav>
