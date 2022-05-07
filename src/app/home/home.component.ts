@@ -16,6 +16,7 @@ export class HomeComponent implements OnInit {
   fechan!: string;
   usuarios: miembros[] = [];
 
+  imagenUsuario:string = "assets/img/miembros.jpg";
 
   constructor() { }
 

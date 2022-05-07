@@ -15,10 +15,10 @@
             {{heroe.bio}}
         </p>
         <div *ngIf="heroe.casa == 'Marvel' else dc">
-            <img src="../../assets/img/marvel.jpg" alt="..." width="150px">
+            <img src="assets/img/marvel.jpg" alt="..." width="150px">
         </div>
         <ng-template #dc>
-            <img src="../../assets/img/dc.jpg" alt="" width="150px">
+            <img src="assets/img/dc.jpg" alt="" width="150px">
         </ng-template>
     </div>
 </div>
